@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -24,38 +25,119 @@ header {
   padding-bottom: 75px;
 }
 
-.headline-greeting{
+.headline-greeting {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
   font-size: 24px;
 }
 
-.headline-title{
+.headline-title {
   color: #ec5242;
   font-family: 'Lato', sans-serif;
   font-size: 44px;
 }
 
-.headline-paragraph{
+.headline-paragraph {
   padding: 24px;
   font-family: 'Lato', sans-serif;
   line-height: 24px;
 }
 
-.headline-date{
+.headline-date {
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 36px;
 }
 
-.headline-venue{
+.headline-venue {
   font-family: 'Lato', sans-serif;
 }
 
 .menu-container {
   display: inline-block;
   cursor: pointer;
+}
+
+.main-program {
+  padding: 16px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #272a31;
+}
+
+.main-program-title {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  padding: 24px;
+  padding-bottom: 12px;
+}
+
+.line {
+  border: 1px solid #ec5242;
+  background-color: #ec5242;
+  width: 60px;
+  margin-bottom: 24px;
+}
+
+.programs {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.program {
+  background-color: #ffffff27;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.program-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.program-icon img {
+  max-width: 50px;
+}
+
+.program-title {
+  color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 100px;
+}
+
+.program-paragraph {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+}
+
+.main-program-button {
+  color: #fff;
+  background-color: #ec5242;
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bar1,
