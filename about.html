@@ -9,7 +9,7 @@
   <title>Devs meet & chill</title>
 </head>
 
-<body>
+<body class="body">
   <header>
     <div class="menu-container" onclick="toggleMenu(this)">
       <div class="bar1"></div>
@@ -17,6 +17,22 @@
       <div class="bar3"></div>
     </div>
   </header>
+  <div id="mobile-menu" class="displayNone">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-0" id="mobile-menu-item-0" href="/index.html">Home</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-1" id="mobile-menu-item-1" href="#logo">logo</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-2" id="mobile-menu-item-2" href="#meetups">meetups</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-3" id="mobile-menu-item-3" href="#sponsors">Sponsors</a>
+      </li>
+    </ul>
+  </div>
   <section class="about-headline">
     <p class="about-headline-greeting">"Hello! Connecting world"</p>
     <h1 class="about-headline-title">Dev's Meet & Chill 2022</h1>
@@ -26,11 +42,11 @@
     <p class="contact">Please contact us via Email for any further questions about Dev's Meet & Chill 2022!</p>
     <p class="contact-email">devsmeet&chill@gmail.com</p>
   </section>
-  <section class="logo-section">
+  <section id="logo" class="logo-section">
     <h1 class="logo-title">Dev's Meet & Chill 2022 logo</h1>
     <p class="logo">DMC</p>
   </section>
-  <section class="past-meetups">
+  <section id="meetups" class="past-meetups">
     <h1 class="past-meetups-title">See Past Meetups</h1>
     <div class="line"></div>
     <p class="past-meetups-paragraph">Take a look at the 1st two Dev's Meet & Chill events which took place in Nairobi
@@ -42,7 +58,7 @@
       <p><strong>2011</strong> <br> Dev's Meet & Chill in Mombasa</p>
     </div>
   </section>
-  <section class="partners-section">
+  <section id="sponsors" class="partners-section">
     <h1 class="partners-title">Partner</h1>
     <div class="line"></div>
     <div class="partners">
