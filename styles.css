@@ -421,13 +421,16 @@ footer {
   height: 44px;
   margin-bottom: 36px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.rotateImage {
+  transform: rotate(180deg);
 }
 
 .view-more-icon {
   width: 20px;
   margin-left: 10px;
-
-  /* transform: rotate(180deg); */
 }
 
 .view-more-container {
