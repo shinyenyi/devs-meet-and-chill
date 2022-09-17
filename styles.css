@@ -94,7 +94,7 @@ header {
   font-size: 44px;
 }
 
-.contact{
+.contact {
   font-family: 'Lato', sans-serif;
   text-align: center;
   line-height: 24px;
@@ -139,7 +139,7 @@ header {
   padding: 24px;
   font-family: 'Lato', sans-serif;
   line-height: 24px;
-  background-color:  #fff;
+  background-color: #fff;
   text-align: center;
 }
 
@@ -163,7 +163,7 @@ header {
   font-size: 36px;
   font-weight: bolder;
   padding: 10px;
-  border:3px solid #272a31;
+  border: 3px solid #272a31;
   margin-top: 16px;
 }
 
