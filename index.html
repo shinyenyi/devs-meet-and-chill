@@ -9,7 +9,7 @@
   <title>Devs meet & chill</title>
 </head>
 
-<body>
+<body class="body">
   <header>
     <div class="menu-container" onclick="toggleMenu(this)">
       <div class="bar1"></div>
@@ -17,6 +17,22 @@
       <div class="bar3"></div>
     </div>
   </header>
+  <div id="mobile-menu" class="displayNone">
+    <ul class="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-0" id="mobile-menu-item-0" href="/about.html">About</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-1" id="mobile-menu-item-1" href="#program">Program</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-2" id="mobile-menu-item-2" href="#join">Join</a>
+      </li>
+      <li class="mobile-menu-item">
+        <a class="mobile-menu-item-3" id="mobile-menu-item-3" href="#sponsors">Sponsors</a>
+      </li>
+    </ul>
+  </div>
   <section class="headline">
     <p class="headline-greeting">"Hello! Connecting world"</p>
     <h1 class="headline-title">Dev's Meet & Chill 2022</h1>
@@ -25,7 +41,7 @@
     <p class="headline-date">2022.10.15(THU) ~ 16(FRI)</p>
     <p class="headline-venue">@The Waterfront, Nairobi</p>
   </section>
-  <section class="main-program">
+  <section id="program" class="main-program">
     <h1 class="main-program-title">Main Program</h1>
     <div class="line"></div>
     <ul class="programs">
@@ -55,7 +71,7 @@
         <p class="program-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
       </li>
     </ul>
-    <p class="main-program-button">Join Dev's Meet & Chill 2022</p>
+    <p id="join" class="main-program-button">Join Dev's Meet & Chill 2022</p>
   </section>
   <section class="featured-speakers">
     <h1 class="featured-speakers-title">Featured Speakers</h1>
@@ -87,7 +103,7 @@
       </div>
     </div>
   </section>
-  <section class="partners-section">
+  <section id="sponsors" class="partners-section">
     <h1 class="partners-title">Partner</h1>
     <div class="line"></div>
     <div class="partners">
