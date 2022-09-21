@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const mobileMenu = document.getElementById('mobile-menu');
 const body = document.querySelector('.body');
 const menuItemZero = document.querySelector('.mobile-menu-item-0');
@@ -106,7 +107,6 @@ function createFeaturedSpeakers(speakers) {
 }
 
 speakers = speakers.slice(0, 2);
-createFeaturedSpeakers(speakers);
 
 viewMoreOrLess.onclick = (() => {
   viewMoreOrLessIcon.classList.toggle('rotateImage');
@@ -122,5 +122,29 @@ viewMoreOrLess.onclick = (() => {
     createFeaturedSpeakers(filteredSpeakers);
     speakers = filteredSpeakers;
     viewMoreOrLessText.textContent = 'LESS';
+  }
+});
+
+window.addEventListener('resize', () => {
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth
+    || document.body.clientWidth;
+  if (screenWidth >= 768) {
+    speakerList = '';
+    createFeaturedSpeakers(filteredSpeakers);
+  } else {
+    speakerList = '';
+    createFeaturedSpeakers(speakers);
+  }
+});
+
+window.addEventListener('load', () => {
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth
+    || document.body.clientWidth;
+  if (screenWidth > 768) {
+    speakerList = '';
+    createFeaturedSpeakers(filteredSpeakers);
+  } else {
+    speakerList = '';
+    createFeaturedSpeakers(speakers);
   }
 });
