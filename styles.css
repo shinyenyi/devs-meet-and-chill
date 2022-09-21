@@ -653,10 +653,12 @@ footer {
   .view-more {
     display: none;
   }
+
   .meetups {
     display: flex;
     margin-bottom: 24px;
   }
+
   .first-meetup {
     margin-right: 24px;
   }
