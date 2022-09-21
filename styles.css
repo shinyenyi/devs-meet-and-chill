@@ -375,7 +375,7 @@ footer {
   list-style: none;
   display: flex;
   flex-direction: column;
-  max-width: 800px;
+  max-width: 810px;
 }
 
 .speaker {
