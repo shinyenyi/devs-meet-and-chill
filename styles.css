@@ -16,6 +16,7 @@ body {
 
 header {
   padding: 24px;
+  padding-top: 10px;
   background-color: rgba(240, 240, 240, 0.534);
 }
 
@@ -152,6 +153,12 @@ header {
   justify-content: center;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.logo-desc {
+  font-family: 'Lato', sans-serif;
+  margin: 24px;
+  text-align: center;
 }
 
 .logo-title {
@@ -531,9 +538,38 @@ footer {
   display: none;
 }
 
+.social-links-section {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .menu-container {
     display: none;
+  }
+
+  .social-links-section {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #272a31;
+    padding-right: 84px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+  }
+
+  .social-links li {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .social-links li img {
+    width: 15px;
   }
 
   .nav-bar {
@@ -635,6 +671,14 @@ footer {
     align-items: center;
   }
 
+  .dark-background {
+    background-color: #272a31;
+  }
+
+  .display-none {
+    display: none;
+  }
+
   .speakers {
     flex-direction: row;
     flex-wrap: wrap;
@@ -659,6 +703,14 @@ footer {
     margin-bottom: 24px;
   }
 
+  .logo-desc {
+    max-width: 500px;
+  }
+
+  .white {
+    color: #fff;
+  }
+
   .first-meetup {
     margin-right: 24px;
   }
@@ -667,6 +719,10 @@ footer {
 @media (min-width: 1024px) {
   .headline {
     padding-left: 200px;
+  }
+
+  .social-links-section {
+    padding-right: 224px;
   }
 
   .speakers {

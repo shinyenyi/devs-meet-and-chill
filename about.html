@@ -10,6 +10,15 @@
 </head>
 
 <body class="body">
+  <div class="social-links-section">
+    <ul class="social-links">
+      <li><img src="images/linkedin.svg" alt=""></li>
+      <li><img src="images/twitter.svg" alt=""></li>
+      <li>English</li>
+      <li>My Page</li>
+      <li>Logout</li>
+    </ul>
+  </div>
   <header>
     <div class="menu-container" onclick="toggleMenu(this)">
       <div class="bar1"></div>
@@ -17,9 +26,9 @@
       <div class="bar3"></div>
     </div>
     <nav class="nav-bar">
-      <a class="logo menu-logo" href="/index.html">DMC</a>
+      <a class="logo menu-logo" href="index.html">DMC</a>
       <ul class="toolbar-menu">
-        <li class="toolbar-menu-item"><a href="#about">About</a></li>
+        <li class="toolbar-menu-item"><a href="index.html">Home</a></li>
         <li class="toolbar-menu-item"><a href="#meetups">Meetups</a></li>
         <li class="toolbar-menu-item"><a href="#">Join</a></li>
         <li class="toolbar-menu-item"><a href="#sponsors">Sponsors</a></li>
@@ -31,7 +40,7 @@
   <div id="mobile-menu" class="displayNone">
     <ul class="mobile-menu-list">
       <li class="mobile-menu-item">
-        <a class="mobile-menu-item-0" id="mobile-menu-item-0" href="/index.html">Home</a>
+        <a class="mobile-menu-item-0" id="mobile-menu-item-0" href="index.html">Home</a>
       </li>
       <li class="mobile-menu-item">
         <a class="mobile-menu-item-1" id="mobile-menu-item-1" href="#logo">logo</a>
@@ -54,11 +63,12 @@
     <p class="contact-email">devsmeet&chill@gmail.com</p>
   </section>
   <section id="logo" class="logo-section">
-    <h1 class="logo-title">Dev's Meet & Chill 2022 logo</h1>
+    <h2 class="logo-title">Dev's Meet & Chill 2022 logo</h2>
+    <p class="logo-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit id culpa, a sit totam vel esse consectetur rerum voluptatem vitae expedita ex, ullam illum aut modi ipsum quibusdam asperiores iste.</p>
     <p class="logo">DMC</p>
   </section>
   <section id="meetups" class="past-meetups">
-    <h1 class="past-meetups-title">See Past Meetups</h1>
+    <h2 class="past-meetups-title">See Past Meetups</h2>
     <div class="line"></div>
     <p class="past-meetups-paragraph">Take a look at the 1st two Dev's Meet & Chill events which took place in Nairobi
       and in Mombasa</p>
@@ -71,8 +81,8 @@
       </div>
     </div>
   </section>
-  <section id="sponsors" class="partners-section">
-    <h1 class="partners-title">Partner</h1>
+  <section id="sponsors" class="partners-section display-none">
+    <h2 class="partners-title">Partner</h2>
     <div class="line"></div>
     <div class="partners">
       <p class="mozilla">mozilla</p>
@@ -82,14 +92,14 @@
       <p class="airbnb">airbnb</p>
     </div>
   </section>
-  <footer>
+  <footer class="dark-background">
     <div class="footer-first-container">
       <img class="copyright" src="images/copyright.png" alt="copyright">
-      <p class="footer-title">Dev's Meet & Chill</p>
+      <p class="footer-title white">Dev's Meet & Chill</p>
     </div>
     <div class="footer-second-container">
-      <p class="footer-copyright">2022 Dev's Meet & Chill</p>
-      <p class="footer-rights">Some Rights Reserved</p>
+      <p class="footer-copyright white">2022 Dev's Meet & Chill</p>
+      <p class="footer-rights white">Some Rights Reserved</p>
     </div>
   </footer>
   <script src="main.js"></script>
