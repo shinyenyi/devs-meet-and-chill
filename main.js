@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const mobileMenu = document.getElementById('mobile-menu');
 const body = document.querySelector('.body');
 const menuItemZero = document.querySelector('.mobile-menu-item-0');
@@ -84,7 +83,7 @@ let speakers = [
   },
 ];
 
-const filteredSpeakers = speakers;
+const unfilteredSpeakers = speakers;
 let speakerList = '';
 
 function createFeaturedSpeakers(speakers) {
@@ -119,8 +118,8 @@ viewMoreOrLess.onclick = (() => {
   }
   if (speakers.length === 2) {
     speakerList = '';
-    createFeaturedSpeakers(filteredSpeakers);
-    speakers = filteredSpeakers;
+    createFeaturedSpeakers(unfilteredSpeakers);
+    speakers = unfilteredSpeakers;
     viewMoreOrLessText.textContent = 'LESS';
   }
 });
@@ -130,7 +129,7 @@ window.addEventListener('resize', () => {
     || document.body.clientWidth;
   if (screenWidth >= 768) {
     speakerList = '';
-    createFeaturedSpeakers(filteredSpeakers);
+    createFeaturedSpeakers(unfilteredSpeakers);
   } else {
     speakerList = '';
     createFeaturedSpeakers(speakers);
@@ -142,7 +141,7 @@ window.addEventListener('load', () => {
     || document.body.clientWidth;
   if (screenWidth > 768) {
     speakerList = '';
-    createFeaturedSpeakers(filteredSpeakers);
+    createFeaturedSpeakers(unfilteredSpeakers);
   } else {
     speakerList = '';
     createFeaturedSpeakers(speakers);
